@@ -146,6 +146,7 @@ MyDrive/000/result.mp4
 
 ### 八、結果分析
 - 成果前後對比圖
+  
 ![image](https://github.com/05ki19lj/Artificial-Intelligence/blob/main/%E5%8A%9F%E8%83%BD%E5%89%8D%E5%BE%8C%E5%B0%8D%E6%AF%94%E5%9C%96.png)
 
 測試項目	結果	說明
