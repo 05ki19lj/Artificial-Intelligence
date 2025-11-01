@@ -49,6 +49,7 @@ GPU 型號	Tesla T4（Colab 提供）
 1. 檔案太大下載很久//補充說明:雲端一個檔寫上傳需14~16h，實際上傳1h以上，參考的文案也有提到雲端跑很久的問題
 2. 版本有三個地方太舊執行時一定要更新，不然會顯示錯誤無法運行
 3. 上述安裝後，執行要重跑一次動作繁瑣
+   ![image]( https://github.com/05ki19lj/Artificial-Intelligence/blob/main/%E9%9C%80%E9%87%8D%E8%B7%91%E7%95%AB%E9%9D%A2.png)
 4. 執行結果不知長怎樣，只給運行沒有寫或是附圖結果
 #### 上述是一個段落
 5. 加上運行實作例子，但要手動調整特定的不然會停在奇怪的地方無法偵測
@@ -141,6 +142,7 @@ display(HTML(f"""
 MyDrive/000/result.mp4
 
 ### 七、結果分析
+![image](https://github.com/05ki19lj/Artificial-Intelligence/blob/main/%E5%8A%9F%E8%83%BD%E5%89%8D%E5%BE%8C%E5%B0%8D%E6%AF%94%E5%9C%96.png))
 測試項目	結果	說明
 追蹤穩定度	良好	人物移動時框線穩定
 執行速度	正常	每秒約 20 幀
