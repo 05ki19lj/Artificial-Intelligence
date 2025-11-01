@@ -75,31 +75,31 @@ from google.colab import drive
 from IPython.display import display, HTML
 import cv2
 
-# 1️⃣ 掛載 Google Drive
+#### 1️⃣ 掛載 Google Drive
 drive.mount('/content/drive', force_remount=True)
 project_path = '/content/drive/MyDrive/000/video_analyst'
 os.chdir(project_path)
 
-# 2️⃣ 安裝必要套件
+#### 2️⃣ 安裝必要套件
 !pip install --quiet opencv-python matplotlib
 
-# 3️⃣ 下載測試影片
+#### 3️⃣ 下載測試影片
 !wget -O /content/sample_video.avi https://github.com/opencv/opencv/raw/master/samples/data/vtest.avi
 video_path = '/content/sample_video.avi'
 output_path = '/content/drive/MyDrive/000/result.mp4'
 
-# 4️⃣ 初始化追蹤器
+#### 4️⃣ 初始化追蹤器
 cap = cv2.VideoCapture(video_path)
 ret, frame = cap.read()
 tracker = cv2.TrackerCSRT_create()
 bbox = (200, 50, 100, 80)
 tracker.init(frame, bbox)
 
-# 5️⃣ 設定輸出影片
+#### 5️⃣ 設定輸出影片
 fourcc = cv2.VideoWriter_fourcc(*'mp4v')
 out = cv2.VideoWriter(output_path, fourcc, 20.0, (frame.shape[1], frame.shape[0]))
 
-# 6️⃣ 執行追蹤
+#### 6️⃣ 執行追蹤
 while True:
     ret, frame = cap.read()
     if not ret:
@@ -111,7 +111,7 @@ while True:
     out.write(frame)
 cap.release(); out.release()
 
-# 7️⃣ 播放輸出影片
+#### 7️⃣ 播放輸出影片
 display(HTML(f"""
 <video width="640" height="480" controls>
   <source src="{output_path}" type="video/mp4">
