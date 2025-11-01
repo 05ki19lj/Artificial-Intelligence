@@ -142,7 +142,8 @@ display(HTML(f"""
 MyDrive/000/result.mp4
 
 ### 七、結果分析
-![image](https://github.com/05ki19lj/Artificial-Intelligence/blob/main/%E5%8A%9F%E8%83%BD%E5%89%8D%E5%BE%8C%E5%B0%8D%E6%AF%94%E5%9C%96.png))
+![image](https://github.com/05ki19lj/Artificial-Intelligence/blob/main/%E5%8A%9F%E8%83%BD%E5%89%8D%E5%BE%8C%E5%B0%8D%E6%AF%94%E5%9C%96.png)
+
 測試項目	結果	說明
 追蹤穩定度	良好	人物移動時框線穩定
 執行速度	正常	每秒約 20 幀
