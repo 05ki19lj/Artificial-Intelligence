@@ -45,20 +45,20 @@ CSRT 的優點是能在光線改變、部分遮擋的情況下，仍保持穩定
 GPU 型號	Tesla T4（Colab 提供）
 輸出影片格式	MP4（H.264 編碼）
 
-### 遇到的困難
+### 四、遇到的困難
 1. 檔案太大下載很久//補充說明:雲端一個檔寫上傳需14~16h，實際上傳1h以上，參考的文案也有提到雲端跑很久的問題
 2. 版本有三個地方太舊執行時一定要更新，不然會顯示錯誤無法運行
 3. 上述安裝後，執行要重跑一次動作繁瑣
    ![image]( https://github.com/05ki19lj/Artificial-Intelligence/blob/main/%E9%9C%80%E9%87%8D%E8%B7%91%E7%95%AB%E9%9D%A2.png)
    - 補充改善方式：2、3完成後有分別更新後做總整理
-5. 執行結果不知長怎樣，只給運行沒有寫或是附圖結果
+4. 執行結果不知長怎樣，只給運行沒有寫或是附圖結果
 #### 上述是一個段落
 5. 加上運行實作例子，但要手動調整特定的不然會停在奇怪的地方無法偵測
    - 改善方式：調整成自動設定+個別有ID
 6. 原檔是avi檔，但一般都用mp4檔(只能輸出檔)
    - 改善方式：改輸出檔名 
 
-### 四、執行流程
+### 五、執行流程
 1️⃣ 掛載 Google Drive
 
 將個人雲端硬碟掛載到 Colab，以儲存程式與輸出結果。
@@ -83,7 +83,7 @@ GPU 型號	Tesla T4（Colab 提供）
 
 利用 HTML 介面直接在 Colab 中播放。
 
-### 五、測試程式碼
+### 六、測試程式碼
 import os
 from google.colab import drive
 from IPython.display import display, HTML
@@ -133,7 +133,7 @@ display(HTML(f"""
 </video>
 """))
 
-### 六、測試結果
+### 七、測試結果
 
 在影片中，綠色方框能準確追蹤行走中的人物。
 
@@ -144,7 +144,7 @@ display(HTML(f"""
 📍 輸出影片路徑：
 MyDrive/000/result.mp4
 
-### 七、結果分析
+### 八、結果分析
 ![image](https://github.com/05ki19lj/Artificial-Intelligence/blob/main/%E5%8A%9F%E8%83%BD%E5%89%8D%E5%BE%8C%E5%B0%8D%E6%AF%94%E5%9C%96.png)
 
 測試項目	結果	說明
@@ -156,7 +156,7 @@ MyDrive/000/result.mp4
 CSRT 追蹤器在測試影片中能保持良好的辨識效果，
 即使人物進入陰影或部分被遮擋，追蹤方框仍能正確鎖定。
 
-### 八、結論
+### 九、結論
 
 在 Google Colab 上成功執行了目標追蹤測試代碼，
 使用 OpenCV CSRT 演算法 能更穩定追蹤影片中的人物。
